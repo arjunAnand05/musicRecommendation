@@ -203,9 +203,11 @@ def runMF():
 	for i in range(1,21):
 		print "r=",i," and RMSE = ",computeMFRMSE(testData,trainData,r=i,numIterations = 10)
 
-def runHybrid(simFunc):
+def runHybrid(simFunc = computeEuclideanSimilarity):
     for i in range(1,21):
         userIdDict,songSet, trainData, testData =  loadFile('train_triplets.txt', songIdDict, trimData=True)
         actualTestData = trimTestData(testData,trainData,songProperties)
         print i,",",computeRMSE(actualTestData,trainData,songProperties, simFunc)
-    
+
+#Uncomment below line to run the hybrid approach recommender
+#runHybrid()    
