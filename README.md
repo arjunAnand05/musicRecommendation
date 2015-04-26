@@ -10,3 +10,5 @@ https://github.com/tbertinmahieux/MSongsDB/tree/master/PythonSrc
 
 #Link to Python HDF5 library
 https://github.com/h5py/h5py 
+
+#Data for the visualization is generated as per user request and loaded into the data folder
